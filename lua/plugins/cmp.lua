@@ -70,6 +70,7 @@ return {
 		local capabilities = require("cmp_nvim_lsp").default_capabilities()
 		-- Replace <YOUR_LSP_SERVER> with each lsp server you've enabled.
 		local servers = { "clangd", "rust_analyzer", "pyright" }
+		local lspconfig = require("lspconfig")
 		for _, lsp in ipairs(servers) do
 			lspconfig[lsp].setup({
 				capabilities = capabilities,
