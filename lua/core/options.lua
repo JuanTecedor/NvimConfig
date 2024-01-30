@@ -14,6 +14,7 @@ opt.smartcase = true
 opt.mouse = "a"
 
 opt.number = true
+opt.relativenumber = true
 
 opt.shortmess:append("sI")
 
@@ -22,6 +23,8 @@ opt.splitright = true
 opt.termguicolors = true
 
 opt.whichwrap:append("<>[]hl")
+
+opt.scrolloff = 4
 
 vim.g.mapleader = " "
 vim.g.loaded_netrw = 1
