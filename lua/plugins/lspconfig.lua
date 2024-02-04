@@ -1,6 +1,9 @@
 return {
 	"neovim/nvim-lspconfig",
 	config = function()
-		require("lspconfig").clangd.setup({})
+		local lspconfig = require("lspconfig")
+		lspconfig.clangd.setup({})
+		lspconfig.rust_analyzer.setup({})
+		lspconfig.pyright.setup({})
 	end,
 }
