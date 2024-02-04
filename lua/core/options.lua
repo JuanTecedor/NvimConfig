@@ -25,6 +25,8 @@ opt.termguicolors = true
 opt.whichwrap:append("<>[]hl")
 
 opt.scrolloff = 4
+opt.list = true
+opt.listchars = "tab:» ,extends:›,precedes:‹,nbsp:·,trail:·"
 
 vim.g.mapleader = " "
 vim.g.loaded_netrw = 1
