@@ -2,7 +2,7 @@
 
 ## Installation (Ubuntu)
 
-### Install Neovim v0.9.5
+### Install Neovim >=0.9.5
 
 I recommend building Neovim from source, as the one in the Ubuntu repo is quite old:
 
@@ -35,7 +35,21 @@ Then set the font on your terminal.
 git clone https://github.com/JuanTecedor/NvimConfig.git ~/.config/nvim
 ```
 
-Now you can open `nvim` and everything should install automatically and work.
+Now you can open `nvim` and everything should install automatically and work*.
+
+### Post install
+
+*After the install you will be probably missing some auxiliary binaries that may improve your experience.
+Run the following command inside nvim:
+```
+:checkhealth
+```
+
+Some examples of language-dependant/utility packages you may be interesed in installing:
+```
+sudo apt-get install luarocks python3-pip ripgrep fd-find python3-pynvim
+cargo install tree-sitter-cli
+```
 
 ## Extra
 ### Run stylua with Docker
