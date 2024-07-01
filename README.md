@@ -21,7 +21,7 @@ Multiple plugins use icons, you will need to install a font that supports them:
 
 ```
 cd /usr/local/share/fonts
-sudo wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/JetBrainsMono.zip
+sudo wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/JetBrainsMono.zip
 sudo unzip -d JetBrainsMono JetBrainsMono.zip
 sudo rm JetBrainsMono.zip
 sudo fc-cache -fv
@@ -32,7 +32,7 @@ Then set the font on your terminal.
 
 ### Install config file
 ```
-git clone git@github.com:JuanTecedor/NvimConfig.git ~/.config/nvim
+git clone https://github.com/JuanTecedor/NvimConfig.git ~/.config/nvim
 ```
 
 Now you can open `nvim` and everything should install automatically and work.
