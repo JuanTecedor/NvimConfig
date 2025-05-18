@@ -2,13 +2,13 @@
 
 ## Installation (Ubuntu)
 
-### Install Neovim >=0.9.5
+### Install Neovim 0.11.1
 
 I recommend building Neovim from source, as the one in the Ubuntu repo is quite old:
 
 ```
 sudo apt-get install ninja-build gettext cmake unzip curl
-git clone --depth 1 --branch stable https://github.com/neovim/neovim
+git clone --depth 1 --branch v0.11.1 https://github.com/neovim/neovim
 cd neovim
 make CMAKE_BUILD_TYPE=RelWithDebInfo
 sudo make install
@@ -20,7 +20,7 @@ Multiple plugins use icons, you will need to install a font that supports them:
 
 ```
 cd /usr/local/share/fonts
-sudo wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/JetBrainsMono.zip
+sudo wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/JetBrainsMono.zip
 sudo unzip -d JetBrainsMono JetBrainsMono.zip
 sudo rm JetBrainsMono.zip
 sudo fc-cache -fv
